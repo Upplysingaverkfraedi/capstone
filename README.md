@@ -48,11 +48,31 @@ Lýsið vandamálinu sem þið eruð að leysa. Hvaða spurningar viljið þið 
 
 _(Uppfærið þetta þegar þið hafið eitthvað til að keyra)_
 
+### Skoða GitHub Pages-síðuna (docs/) staðbundið
+
+`docs/index.html` er upphafssíðan fyrir mælaborðið/skýrsluna ykkar. Til að skoða
+hana á eigin tölvu áður en hún fer á netið:
+
+```bash
+# Opna beint í vafra (einfaldast, dugar fyrir hreina HTML/CSS/JS)
+open docs/index.html        # macOS
+start docs/index.html       # Windows
+
+# Eða keyra staðbundinn vefþjón (þarf ef síðan sækir gögn með fetch/AJAX)
+cd docs
+python3 -m http.server 8000
+# Opnið svo http://localhost:8000 í vafranum
+```
+
+_(Ef þið notið Shiny/Flexdashboard/Quarto í staðinn fyrir hreina HTML-skrá,
+uppfærið þessar leiðbeiningar samkvæmt því — sjá dæmi í `src/README.md`.)_
+
 ## Niðurstöður
 
 _(Uppfærið þetta eftir hverja lotu — hvað lærðuð þið? Hvað kom á óvart?)_
 
-Lifandi skýrsla er birt á [GitHub Pages](https://upplysingaverkfraedi.github.io/[nafn-gagnageymslu]/).
+Lifandi skýrsla er birt á [GitHub Pages](https://upplysingaverkfraedi.github.io/[nafn-gagnageymslu]/)
+(útgefið sjálfkrafa úr `docs/` á `main`).
 
 ## Leyfi
 
