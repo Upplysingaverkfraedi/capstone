@@ -30,7 +30,7 @@ Lýsið vandamálinu sem þið eruð að leysa. Hvaða spurningar viljið þið 
 │   ├── raw/          ← Upprunagögn — breytist aldrei
 │   └── processed/    ← Hreinsuð og umbreytt gögn
 ├── src/              ← Kóði (SQL, Python, R o.fl.)
-├── reports/          ← GitHub Pages skýrslur
+├── docs/             ← GitHub Pages skýrslur (útgefið á /docs á main)
 │   └── iREF/         ← Einstaklingsbundnar ígrundanir
 ├── TEAM.md           ← Hópsamningur
 └── README.md         ← Þetta skjal

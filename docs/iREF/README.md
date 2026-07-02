@@ -1,4 +1,4 @@
-# reports/iREF/
+# docs/iREF/
 
 Einstaklingsbundnar ígrundanir — **persónuleg skjöl, ekki samvinnuskjöl**.
 

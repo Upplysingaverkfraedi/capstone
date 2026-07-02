@@ -1,7 +1,7 @@
 # iREF — Einstaklingsbundin ígrundun
 
-> Fylltu út eftir **hverja tAPP** og geymdu í `iREF/[lota]-[hi-notendanafn].md` í gagnageymslu hópsins.
-> Dæmi: `iREF/git-helgaingim.md`
+> Fylltu út eftir **hverja tAPP** og geymdu í `docs/iREF/[lota]-[hi-notendanafn].md` í gagnageymslu hópsins.
+> Dæmi: `docs/iREF/git-helgaingim.md`
 > Þetta er persónulegt skjal — ekki samvinnuskjal.
 
 ---
