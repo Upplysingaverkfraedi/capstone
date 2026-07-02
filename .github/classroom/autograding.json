@@ -1,0 +1,45 @@
+{
+  "name": "Autograding",
+  "tests": [
+    {
+      "name": "LICENSE finnst",
+      "setup": "",
+      "run": "test -f LICENSE && echo FOUND || echo MISSING",
+      "input": "",
+      "output": "FOUND",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "README.md finnst",
+      "setup": "",
+      "run": "test -f README.md && echo FOUND || echo MISSING",
+      "input": "",
+      "output": "FOUND",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "TEAM.md finnst",
+      "setup": "",
+      "run": "test -f TEAM.md && echo FOUND || echo MISSING",
+      "input": "",
+      "output": "FOUND",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "docs/iREF/template.md finnst",
+      "setup": "",
+      "run": "test -f docs/iREF/template.md && echo FOUND || echo MISSING",
+      "input": "",
+      "output": "FOUND",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    }
+  ]
+}

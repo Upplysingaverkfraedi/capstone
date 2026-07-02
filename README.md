@@ -74,6 +74,12 @@ _(Uppfærið þetta eftir hverja lotu — hvað lærðuð þið? Hvað kom á ó
 Lifandi skýrsla er birt á [GitHub Pages](https://upplysingaverkfraedi.github.io/[nafn-gagnageymslu]/)
 (útgefið sjálfkrafa úr `docs/` á `main`).
 
+## Autograding-athugun
+
+Á hverju push er sjálfvirk athugun (GitHub Classroom autograding) sem staðfestir
+að `LICENSE`, `README.md`, `TEAM.md` og `docs/iREF/template.md` séu til staðar.
+**Ekki eyða þessum skrám** — ef athugunin fellur, sést það sem rauður X á commit-inu.
+
 ## Leyfi
 
 [MIT](LICENSE) — eða tilgreinið annað leyfi ef við á.

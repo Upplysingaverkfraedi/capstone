@@ -1,0 +1,77 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: LICENSE finnst
+        id: license-finnst
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: LICENSE finnst
+          setup-command: ''
+          command: test -f LICENSE && echo FOUND || echo MISSING
+          expected-output: FOUND
+          comparison-method: included
+          timeout: 5
+          max-score: 1
+
+      - name: README.md finnst
+        id: readme-finnst
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: README.md finnst
+          setup-command: ''
+          command: test -f README.md && echo FOUND || echo MISSING
+          expected-output: FOUND
+          comparison-method: included
+          timeout: 5
+          max-score: 1
+
+      - name: TEAM.md finnst
+        id: team-finnst
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: TEAM.md finnst
+          setup-command: ''
+          command: test -f TEAM.md && echo FOUND || echo MISSING
+          expected-output: FOUND
+          comparison-method: included
+          timeout: 5
+          max-score: 1
+
+      - name: docs/iREF/template.md finnst
+        id: template-finnst
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: docs/iREF/template.md finnst
+          setup-command: ''
+          command: test -f docs/iREF/template.md && echo FOUND || echo MISSING
+          expected-output: FOUND
+          comparison-method: included
+          timeout: 5
+          max-score: 1
+
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          LICENSE-FINNST_RESULTS: "${{steps.license-finnst.outputs.result}}"
+          README-MD-FINNST_RESULTS: "${{steps.readme-finnst.outputs.result}}"
+          TEAM-MD-FINNST_RESULTS: "${{steps.team-finnst.outputs.result}}"
+          DOCS-IREF-TEMPLATE-MD-FINNST_RESULTS: "${{steps.template-finnst.outputs.result}}"
+        with:
+          runners: license-finnst,readme-md-finnst,team-md-finnst,docs-iref-template-md-finnst
